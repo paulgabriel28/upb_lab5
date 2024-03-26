@@ -2,7 +2,9 @@
 
 În cadrul acestui laborator, se lucrează cu clase și operații pe string-uri pentru a gestiona informații despre persoane și pentru a interacționa cu fișiere text.
 
-## [Clasa](https://github.com/paulgabriel28/upb_lab5/blob/main/persoana.h)
+## Clasa:
+
+Clasa folosita este [Persoana](https://github.com/paulgabriel28/upb_lab5/blob/main/persoana.h)
 
 ## Cerințe
 
