@@ -10,11 +10,9 @@ void sortare_data_nastere(Persoana* vec, const int &dim) {
     for(int i = 0; i < dim; i++) {
         for(int j = 0; j < dim; j++) {
             if(vec[j].getDataNastere() > vec[i].getDataNastere()) {
-                string j_nume = vec[j].getNumePrenume();
-                string i_nume = vec[i].getNumePrenume();
-                j_nume.swap(i_nume);
-                vec[j].setNumePrenume(j_nume);
-                vec[i].setNumePrenume(i_nume);
+                Persoana aux = vec[i];
+                vec[i] = vec[j];
+                vec[j] = aux; // creare operator=
             }
         }
     }
