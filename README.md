@@ -18,8 +18,3 @@ Clasa folosita este [Persoana](https://github.com/paulgabriel28/upb_lab5/blob/ma
 ## Implementare și Testare
 
 Pentru a rezolva aceste cerințe, sunt necesare implementarea metodelor și funcțiilor respective și testarea acestora în funcția `main`.
-
-## Fișier README.md
-
-Acest fișier oferă o descriere a cerințelor laboratorului și indicății pentru implementarea și testarea acestora.
-
