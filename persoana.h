@@ -14,8 +14,8 @@ public:
     
     //constructor cu parametri
     Persoana(string, string, string, bool);
-    //supradefinirea operatorului de extragere
     
+    //supradefinirea operatorului de extragere
     //atributele sunt afisate pe aceeasi linie, cu spatii intre ele, la final se trece la linie noua
     friend ostream& operator<<(ostream &, const Persoana & );
     
