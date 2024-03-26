@@ -59,3 +59,32 @@ int Persoana::getNrPrenume() const {
     }
     return nr + 1;
 }
+
+string* Persoana::getPrenumeList() const {
+    string *list = new string[getNrPrenume()];
+    int nr_list = 0;
+    for(int i = 0; i < prenume.size(); i++) {
+        if(prenume[i] == '-') {
+            nr_list++;
+        } else {
+            list[nr_list] += prenume[i];
+        }
+    }
+}
+
+string Persoana::getNumePrenume() const {
+    return string(nume + " " + prenume);
+}
+
+void Persoana::setNumePrenume(string str) {
+    int space = 0;
+    for(int i = 0; i < str.size(); i++) {
+        if(str[i] == ' ') {
+            space = i;
+            break;
+        }
+    }
+
+    nume = str.substr(0, space);
+    prenume = str.substr(space + 1, str.size());
+}
