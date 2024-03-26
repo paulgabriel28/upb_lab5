@@ -24,7 +24,18 @@ ostream& operator<<(ostream &dev, const Persoana &pers) {
 }
 
 istream& operator>>(istream &dev, Persoana &pers) {
-    dev >> pers.nume >> pers.prenume >> pers.CNP >> pers.student;
+    // cout<<"Nume: ";
+    dev >> pers.nume;
+
+    // cout<<"Prenume: ";
+    dev >> pers.prenume;
+
+    // cout<<"CNP: ";
+    dev >> pers.CNP;
+
+    // cout<<"Student (0 / 1): ";
+    dev >> pers.student;
+    
     return dev;
 }
 
